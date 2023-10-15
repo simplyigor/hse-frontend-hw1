@@ -2,6 +2,7 @@
 
 This is the first homework assignment for the web development course (HSE, October 2023)
 ---
+Smt
 
 # Информация о макете 🎨
 
