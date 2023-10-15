@@ -11,4 +11,6 @@ This is the first homework assignment for the web development course (HSE, Octob
 
 # Запуск 🤖
 
-<code>npx parcel *.html</code>
+```
+npx parcel *.html
+```
