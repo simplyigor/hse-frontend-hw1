@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Тег для корректного отображения интерфейса на безрамочных смартфонах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <!-- Общие стили -->
+    <link rel="stylesheet" href="styles/index/main.css">
+    <link rel="stylesheet" href="styles/index/reset.css">
+    <link rel="stylesheet" href="styles/index/userbar.css">
+    <link rel="stylesheet" href="styles/index/sidebar.css">
+    <link rel="stylesheet" href="styles/index/calendar.css">
+    <link rel="stylesheet" href="styles/index/activity.css">
+    <link rel="stylesheet" href="styles/index/task_today.css">
+    <link rel="stylesheet" href="styles/index/running_task.css">
+    <link rel="stylesheet" href="styles/index/upcoming_tasks.css">
+    <link rel="stylesheet" href="styles/index/monthly_mentors.css">
+
+    <!-- Стили специфичные для этой страницы -->
+    <link rel="stylesheet" href="styles/tasks/explore-tasks.css">
+
+    <!-- Фавиконка и заголовок документа -->
+    <title>Task Manager</title>
+
+  </head>
+  <body>
+    <!-- Секция Explore Tasks -->
+    <div class = "explore-tasks">
+      <div class = "explore-tasks-header">
+        <p class = "explore-tasks-header-left-text">Explore Tasks</p>
+        <div class = explore-tasks-header-right-wrapper>
+          <img class = "explore-tasks-header-right-wrapper-icon" src="assets/icons/notif.svg" />
+          <img class = "explore-tasks-header-right-wrapper-profile" src="https://s3-alpha-sig.figma.com/img/2eb7/e015/0f8b7d8e7fb9a46b95d2cc8d20d1ed6a?Expires=1698019200&Signature=XIjPYx-jIpClHQwo-NErP33rp6GuPNdPfV8dhaFh1wPlDQACJhaybR0lVbPKLtqQGY6DgEDheMc1w3qKWrbV0~-g9gq3p99ZkuAvHWpjWfWdNpd5g6LjmkgfE4wKChpAMETIhS81xyD2C7Z~ylOwBIsRC3deqq7p52ekTPTPf1EoU7nESiBtpT~FunQEUckAxmfWUXsmoUIxLU8tr~OPLFIMVy6j8d0ORJIJj3VaFsdCZow5RE0Uq69l75adxgkDLphPr6T7Pc8PHKh3j81J4VSB6qqglnajrCr~JY8JG6RIMTniqyy~BPMOvIYvLCwHdNzsjffSlz569YhZ1ZV3aw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+        </div>
+      </div>
+      <div class = "explore-tasks-form">
+        <input class = "explore-tasks-form-search-bar" type = "text" placeholder = "Search Task" maxlength = "100">
+        <img class = "explore-tasks-form-icon" src="assets/icons/search.svg" />    
+      </div>
+      <div class = "explore-tasks-filter-block">
+        <div class = "explore-tasks-filter-block-category">
+          <img class = "explore-tasks-filter-block-category-icon" src="assets/icons/category.svg" />
+          <p class = "explore-tasks-filter-block-category-text">Category</p>
+        </div>
+        <div class = "explore-tasks-filter-block-sort">
+          <img class = "explore-tasks-filter-block-sort-icon" src="assets/icons/sort.svg" />
+          <p class = "explore-tasks-filter-block-sort-text">Sort By: Deadline</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Секция Time Limited -->
+    <div class = "time-limited upcoming-tasks-box">
+      <div class = "second-screen upcoming-tasks-box__header">
+        <p class = "upcoming-tasks-box__header_text">Time Limited</p>
+        <div class = "upcoming-tasks-box__header_icons-both">
+          <img class = "upcoming-tasks-box__header_icon-left" src="assets/icons/arrow-left.svg" />
+          <img class = "upcoming-tasks-box__header_icon-right" src="assets/icons/arrow-right.svg" />
+        </div>
+      </div>
+
+      <!-- Секция Time Limited - левая карточка -->
+      <div class = "upcoming-tasks-box__cards">
+        <div class = "upcoming-tasks-box__cards_left-card">
+          <img class = "upcoming-tasks-box__cards_left-card-picture" src = "https://images.unsplash.com/photo-1635776063328-153b13e3c245?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80">
+          <div class = "upcoming-tasks-box__cards_card__text-wrap">
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-title">Creating Mobile App Design</p>
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-subtitle">UI UX Design</p>
+          </div>
+          <!-- Секция Time Limited - левая карточка - progress -->
+          <div class = "upcoming-tasks-box__cards_card__progress">
+            <div class = "upcoming-tasks-box__cards_card__progress-header">
+              <p class = "upcoming-tasks-box__cards_card__progress-header_left-text">Progress</p>
+              <p class = "upcoming-tasks-box__cards_card__progress-header_right-text">75%</p>
+            </div>
+            <div class = "upcoming-tasks-box__cards_left-card__progress-bar-light-blue"> 
+              <div class = "upcoming-tasks-box__cards_left-card__progress-bar-dark-blue">
+                <span class = "upcoming-tasks-box__cards_left-card__progress-bar-light-blue__circle"></span>
+              </div>
+            </div>           
+          </div>
+          <!-- Секция Time Limited - левая карточка - deadline -->
+          <div class = "upcoming-tasks-box__cards_card__deadline">
+            <img class = "upcoming-tasks-box__cards_card__deadline-icon" src="assets/icons/clock.svg" />
+            <p class = "upcoming-tasks-box__cards_card__deadline-text">1 Hour</p>
+          </div>
+          <!-- Секция Time Limited - левая карточка - фотографии -->
+          <div class = "upcoming-tasks-box__cards_card__photos">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/1f59/2390/d69545d7cf9ff5be12e2248ebf54993a?Expires=1698019200&Signature=fmqTF3S8P3gSfIQknlUWSerSKwVzVFkAQ~~TnhkKR9ipPujD1jj2pg6qx0j1XIG6NkBzyvi3n5UVa2YPdQIzxipduI9WCECd2Z-JZJrHttb0w2omP36DjYtzxzmBnHcKvxAVnzfcwrsl1~yrICuLaOZS-kF5Ts-jX0LlEZnhW18rcEBDtp5PKjy5BQwaPNcgSkyTQ~0dH57PBkL6CeIXBob-A2UFdEY5J86tC9e8USolKsQquapLo05LeQ5f2~UwcWVq3Rylb1~G5A-Ry435IvrV55ki2ywCe0BXlLhafjKLSakBHt3INEp35oF7MGtKJc0I6aNdFbZdZWpO3cV3qg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/177f/160a/7952386bb2224fea86799bdf8f4a8d55?Expires=1698019200&Signature=cRECrmrfC3ziCDlBFtTswc9yOCu5dmIqGHsGa9L5dleY83zhf-jueYD1TYr6sx0al7vXgWMk9Tm0jW2QSfb-qe1KKmRgJQOan3T0OX2eGX0mPkKPrqryC0B41dxFq-0fO~TNVf4QaaE7fD6nYv0Kl42aKFDHW-91EQ-H1E2u6IAQUJHwYSLRblXMpOLchrYVU6E3KrwVX4YzR1FeeNRTQjwFzLbVG~aWqfJnSpMYis~QVHca1kAdi~tC6Ue-DZAdygtwZ0KFiLz-VKPSqaRzyV0DiJajL5GLUUDCiBmc96YTV2sv-PgPWOg8pO~vZBABR9f6z2MJkOK83zhhmfRz1Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/b5fc/ab22/6f5ded88606a0b51f545ab8a1eed1ecf?Expires=1698019200&Signature=XeQHiX22kUFUTa2PJ8uQtKBjrjHrTydPuXUbV5I~uSG4mQK53g~F483ThN5~e3QV~VQJWWFd1yzaqKWEoRjZXztZxKfes6laIT-q1lOHasetdCvDTRWAI8DtAcIBwP4a3qroCDRaCE8HGfGElZkkm~lXihP7~wOraFm8UcJkWWaCFPBLIxHNDJHe~i8SXONBcQ-RpMjjAjgYhredZLHVlvefspT0CzzZpZAIpr8--HLXKygeogXH3haMwWlR8GtRxgA1L79H9PNLGB~yntAGpAcs~mtBTWJVtFH--SFTxmteZWPl4mQyc7HAjK~x7cdmHZo5WXVKtStMSPdHU2s92Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/3439/f222/a2802a5c7f50dfb8284561fe948260ca?Expires=1698019200&Signature=I~Q9kCMuNw6YUtidQYQ8XizR-w9c0zg4dALVpuUwkfzKOgRoNhQ5x1cn7kg84mQpsfVPrkPLJu~L9EFrbuLobWljkxiXpB89PFApyOE6jOOBgdzK9srYhXB6qJsY03zn4DgKZ6Y98ESHph3pStuBNWvm79SJZPvpslF1jSCXixJepTP~7in-GxghnNhbnpPNT4LarTgjIE2yKXooyE5paFHVsNZTHhyH~C9aqoLR--13-hKZgo~KmzliBzVbrXWpBhSclqSTq0mw3iRjQa8bE3gQac0KmKBCIDNguxsASzBG8XmbQARf0vC2Uerg3WS3zkrGpoDXWcoX437CdG-XEQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/b724/5ad6/933997cbe7788b0459810be478939786?Expires=1698019200&Signature=EhV62Tk1u8saA~Bbkk5ivpnub0kPqPLGlpGgfONG0qCy4CFl~owqcc7gWaIUjyWjY9aKIhM2xiLfSyDIoBipB7BdlvQU6w-fRO07nfI10dUMlWRU6Z-vNjTWoCEql3l0TGDgk0ZYIFPCnLJgOcLkLVSs2ye4vnXb0zRmeLq~yxJ-GMnB0D-VlEViP6S4Ft5Y4NJymHy~V68KChLEqG79wUOWaust7yHMMacrMyg3YrFdljqc56kIkRudTAIKThgrgw9vm3bAz634BvHDU8KYvNkbJa8n-BwbcFmof~NGDmjiLD0w3RVI5CcfBIwrxeel0s7mpTC37pIWGigRzHgILQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+          </div>
+        </div>
+
+        <!-- Секция Time Limited - правая карточка -->
+        <div class = "upcoming-tasks-box__cards_right-card">
+          <img class = "upcoming-tasks-box__cards_right-card-picture" src = "https://images.unsplash.com/photo-1635776062764-e025521e3df3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80">
+          <div class = "upcoming-tasks-box__cards_card__text-wrap">
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-title">Creating Perfect Website</p>
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-subtitle">Web Development</p>
+          </div>
+          <!-- Секция Time Limited - правая карточка - progress -->
+          <div class = "upcoming-tasks-box__cards_card__progress">
+            <div class = "upcoming-tasks-box__cards_card__progress-header">
+              <p class = "upcoming-tasks-box__cards_card__progress-header_left-text">Progress</p>
+              <p class = "upcoming-tasks-box__cards_card__progress-header_right-text">85%</p>
+            </div>
+            <div class = "upcoming-tasks-box__cards_right-card__progress-bar-light-blue">
+              <div class = "upcoming-tasks-box__cards_right-card__progress-bar-dark-blue">
+                <span class = "upcoming-tasks-box__cards_right-card__progress-bar-light-blue__circle"></span>
+              </div>
+            </div>            
+          </div>
+          <!-- Секция Time Limited - правая карточка - deadline -->
+          <div class = "upcoming-tasks-box__cards_card__deadline">
+            <img class = "upcoming-tasks-box__cards_card__deadline-icon" src="assets/icons/clock.svg" />
+            <p class = "upcoming-tasks-box__cards_card__deadline-text">2 Hours</p>
+          </div>
+          <!-- Секция Time Limited - правая карточка - фотографии -->
+          <div class = "upcoming-tasks-box__cards_card__photos">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/b5fc/ab22/6f5ded88606a0b51f545ab8a1eed1ecf?Expires=1698019200&Signature=XeQHiX22kUFUTa2PJ8uQtKBjrjHrTydPuXUbV5I~uSG4mQK53g~F483ThN5~e3QV~VQJWWFd1yzaqKWEoRjZXztZxKfes6laIT-q1lOHasetdCvDTRWAI8DtAcIBwP4a3qroCDRaCE8HGfGElZkkm~lXihP7~wOraFm8UcJkWWaCFPBLIxHNDJHe~i8SXONBcQ-RpMjjAjgYhredZLHVlvefspT0CzzZpZAIpr8--HLXKygeogXH3haMwWlR8GtRxgA1L79H9PNLGB~yntAGpAcs~mtBTWJVtFH--SFTxmteZWPl4mQyc7HAjK~x7cdmHZo5WXVKtStMSPdHU2s92Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/1f59/2390/d69545d7cf9ff5be12e2248ebf54993a?Expires=1698019200&Signature=fmqTF3S8P3gSfIQknlUWSerSKwVzVFkAQ~~TnhkKR9ipPujD1jj2pg6qx0j1XIG6NkBzyvi3n5UVa2YPdQIzxipduI9WCECd2Z-JZJrHttb0w2omP36DjYtzxzmBnHcKvxAVnzfcwrsl1~yrICuLaOZS-kF5Ts-jX0LlEZnhW18rcEBDtp5PKjy5BQwaPNcgSkyTQ~0dH57PBkL6CeIXBob-A2UFdEY5J86tC9e8USolKsQquapLo05LeQ5f2~UwcWVq3Rylb1~G5A-Ry435IvrV55ki2ywCe0BXlLhafjKLSakBHt3INEp35oF7MGtKJc0I6aNdFbZdZWpO3cV3qg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/b724/5ad6/933997cbe7788b0459810be478939786?Expires=1698019200&Signature=EhV62Tk1u8saA~Bbkk5ivpnub0kPqPLGlpGgfONG0qCy4CFl~owqcc7gWaIUjyWjY9aKIhM2xiLfSyDIoBipB7BdlvQU6w-fRO07nfI10dUMlWRU6Z-vNjTWoCEql3l0TGDgk0ZYIFPCnLJgOcLkLVSs2ye4vnXb0zRmeLq~yxJ-GMnB0D-VlEViP6S4Ft5Y4NJymHy~V68KChLEqG79wUOWaust7yHMMacrMyg3YrFdljqc56kIkRudTAIKThgrgw9vm3bAz634BvHDU8KYvNkbJa8n-BwbcFmof~NGDmjiLD0w3RVI5CcfBIwrxeel0s7mpTC37pIWGigRzHgILQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/177f/160a/7952386bb2224fea86799bdf8f4a8d55?Expires=1698019200&Signature=cRECrmrfC3ziCDlBFtTswc9yOCu5dmIqGHsGa9L5dleY83zhf-jueYD1TYr6sx0al7vXgWMk9Tm0jW2QSfb-qe1KKmRgJQOan3T0OX2eGX0mPkKPrqryC0B41dxFq-0fO~TNVf4QaaE7fD6nYv0Kl42aKFDHW-91EQ-H1E2u6IAQUJHwYSLRblXMpOLchrYVU6E3KrwVX4YzR1FeeNRTQjwFzLbVG~aWqfJnSpMYis~QVHca1kAdi~tC6Ue-DZAdygtwZ0KFiLz-VKPSqaRzyV0DiJajL5GLUUDCiBmc96YTV2sv-PgPWOg8pO~vZBABR9f6z2MJkOK83zhhmfRz1Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/3439/f222/a2802a5c7f50dfb8284561fe948260ca?Expires=1698019200&Signature=I~Q9kCMuNw6YUtidQYQ8XizR-w9c0zg4dALVpuUwkfzKOgRoNhQ5x1cn7kg84mQpsfVPrkPLJu~L9EFrbuLobWljkxiXpB89PFApyOE6jOOBgdzK9srYhXB6qJsY03zn4DgKZ6Y98ESHph3pStuBNWvm79SJZPvpslF1jSCXixJepTP~7in-GxghnNhbnpPNT4LarTgjIE2yKXooyE5paFHVsNZTHhyH~C9aqoLR--13-hKZgo~KmzliBzVbrXWpBhSclqSTq0mw3iRjQa8bE3gQac0KmKBCIDNguxsASzBG8XmbQARf0vC2Uerg3WS3zkrGpoDXWcoX437CdG-XEQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+          </div>          
+        </div>
+      
+        <!-- Секция Time Limited - 3 карточка -->
+        <div class = "upcoming-tasks-box__cards_third-card">
+          <img class = "upcoming-tasks-box__cards_left-card-picture" src = "https://images.unsplash.com/photo-1635776063043-ab23b4c226f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80">
+          <div class = "upcoming-tasks-box__cards_card__text-wrap">
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-title">Creating Color Palletes</p>
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-subtitle">UI UX Design</p>
+          </div>
+          <!-- Секция Time Limited - 3 карточка - progress -->
+          <div class = "upcoming-tasks-box__cards_card__progress">
+            <div class = "upcoming-tasks-box__cards_card__progress-header">
+              <p class = "upcoming-tasks-box__cards_card__progress-header_left-text">Success</p>
+              <p class = "upcoming-tasks-box__cards_card__progress-header_right-text">100%</p>
+            </div>
+            <div class = "upcoming-tasks-box__cards_left-card__progress-bar-light-blue"> 
+              <div class = "third-card-dark-blue upcoming-tasks-box__cards_left-card__progress-bar-dark-blue">
+                <span class = "third-card-circle upcoming-tasks-box__cards_left-card__progress-bar-light-blue__circle"></span>
+              </div>
+            </div>           
+          </div>
+          <!-- Секция Time Limited - 3 карточка - deadline -->
+          <div class = "upcoming-tasks-box__cards_card__deadline">
+            <img class = "upcoming-tasks-box__cards_card__deadline-icon" src="assets/icons/clock.svg" />
+            <p class = "upcoming-tasks-box__cards_card__deadline-text">1 Hour</p>
+          </div>
+          <!-- Секция Time Limited - 3 карточка - фотографии -->
+          <div class = "upcoming-tasks-box__cards_card__photos">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/1f59/2390/d69545d7cf9ff5be12e2248ebf54993a?Expires=1698019200&Signature=fmqTF3S8P3gSfIQknlUWSerSKwVzVFkAQ~~TnhkKR9ipPujD1jj2pg6qx0j1XIG6NkBzyvi3n5UVa2YPdQIzxipduI9WCECd2Z-JZJrHttb0w2omP36DjYtzxzmBnHcKvxAVnzfcwrsl1~yrICuLaOZS-kF5Ts-jX0LlEZnhW18rcEBDtp5PKjy5BQwaPNcgSkyTQ~0dH57PBkL6CeIXBob-A2UFdEY5J86tC9e8USolKsQquapLo05LeQ5f2~UwcWVq3Rylb1~G5A-Ry435IvrV55ki2ywCe0BXlLhafjKLSakBHt3INEp35oF7MGtKJc0I6aNdFbZdZWpO3cV3qg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/177f/160a/7952386bb2224fea86799bdf8f4a8d55?Expires=1698019200&Signature=cRECrmrfC3ziCDlBFtTswc9yOCu5dmIqGHsGa9L5dleY83zhf-jueYD1TYr6sx0al7vXgWMk9Tm0jW2QSfb-qe1KKmRgJQOan3T0OX2eGX0mPkKPrqryC0B41dxFq-0fO~TNVf4QaaE7fD6nYv0Kl42aKFDHW-91EQ-H1E2u6IAQUJHwYSLRblXMpOLchrYVU6E3KrwVX4YzR1FeeNRTQjwFzLbVG~aWqfJnSpMYis~QVHca1kAdi~tC6Ue-DZAdygtwZ0KFiLz-VKPSqaRzyV0DiJajL5GLUUDCiBmc96YTV2sv-PgPWOg8pO~vZBABR9f6z2MJkOK83zhhmfRz1Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/b5fc/ab22/6f5ded88606a0b51f545ab8a1eed1ecf?Expires=1698019200&Signature=XeQHiX22kUFUTa2PJ8uQtKBjrjHrTydPuXUbV5I~uSG4mQK53g~F483ThN5~e3QV~VQJWWFd1yzaqKWEoRjZXztZxKfes6laIT-q1lOHasetdCvDTRWAI8DtAcIBwP4a3qroCDRaCE8HGfGElZkkm~lXihP7~wOraFm8UcJkWWaCFPBLIxHNDJHe~i8SXONBcQ-RpMjjAjgYhredZLHVlvefspT0CzzZpZAIpr8--HLXKygeogXH3haMwWlR8GtRxgA1L79H9PNLGB~yntAGpAcs~mtBTWJVtFH--SFTxmteZWPl4mQyc7HAjK~x7cdmHZo5WXVKtStMSPdHU2s92Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/3439/f222/a2802a5c7f50dfb8284561fe948260ca?Expires=1698019200&Signature=I~Q9kCMuNw6YUtidQYQ8XizR-w9c0zg4dALVpuUwkfzKOgRoNhQ5x1cn7kg84mQpsfVPrkPLJu~L9EFrbuLobWljkxiXpB89PFApyOE6jOOBgdzK9srYhXB6qJsY03zn4DgKZ6Y98ESHph3pStuBNWvm79SJZPvpslF1jSCXixJepTP~7in-GxghnNhbnpPNT4LarTgjIE2yKXooyE5paFHVsNZTHhyH~C9aqoLR--13-hKZgo~KmzliBzVbrXWpBhSclqSTq0mw3iRjQa8bE3gQac0KmKBCIDNguxsASzBG8XmbQARf0vC2Uerg3WS3zkrGpoDXWcoX437CdG-XEQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/b724/5ad6/933997cbe7788b0459810be478939786?Expires=1698019200&Signature=EhV62Tk1u8saA~Bbkk5ivpnub0kPqPLGlpGgfONG0qCy4CFl~owqcc7gWaIUjyWjY9aKIhM2xiLfSyDIoBipB7BdlvQU6w-fRO07nfI10dUMlWRU6Z-vNjTWoCEql3l0TGDgk0ZYIFPCnLJgOcLkLVSs2ye4vnXb0zRmeLq~yxJ-GMnB0D-VlEViP6S4Ft5Y4NJymHy~V68KChLEqG79wUOWaust7yHMMacrMyg3YrFdljqc56kIkRudTAIKThgrgw9vm3bAz634BvHDU8KYvNkbJa8n-BwbcFmof~NGDmjiLD0w3RVI5CcfBIwrxeel0s7mpTC37pIWGigRzHgILQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Секция New Tasks -->
+    <div class = "upcoming-tasks-box">
+      <div class = "second-screen upcoming-tasks-box__header">
+        <p class = "upcoming-tasks-box__header_text">New Tasks</p>
+        <div class = "upcoming-tasks-box__header_icons-both">
+          <img class = " upcoming-tasks-box__header_icon-left" src="assets/icons/arrow-left.svg" />
+          <img class = " upcoming-tasks-box__header_icon-right" src="assets/icons/arrow-right.svg" />
+        </div>
+      </div>
+
+      <!-- Секция New Tasks - левая карточка -->
+      <div class = "upcoming-tasks-box__cards">
+        <div class = "upcoming-tasks-box__cards_left-card">
+          <img class = "upcoming-tasks-box__cards_left-card-picture" src = "https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80">
+          <div class = "upcoming-tasks-box__cards_card__text-wrap">
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-title">Creating Mobile App Design</p>
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-subtitle">UI UX Design</p>
+          </div>
+          <!-- Секция New Tasks - левая карточка - progress -->
+          <div class = "upcoming-tasks-box__cards_card__progress">
+            <div class = "upcoming-tasks-box__cards_card__progress-header">
+              <p class = "upcoming-tasks-box__cards_card__progress-header_left-text">Progress</p>
+              <p class = "upcoming-tasks-box__cards_card__progress-header_right-text">75%</p>
+            </div>
+            <div class = "upcoming-tasks-box__cards_left-card__progress-bar-light-blue"> 
+              <div class = "upcoming-tasks-box__cards_left-card__progress-bar-dark-blue">
+                <span class = "upcoming-tasks-box__cards_left-card__progress-bar-light-blue__circle"></span>
+              </div>
+            </div>           
+          </div>
+          <!-- Секция New Tasks - левая карточка - deadline -->
+          <div class = "upcoming-tasks-box__cards_card__deadline">
+            <img class = "upcoming-tasks-box__cards_card__deadline-icon" src="assets/icons/clock.svg" />
+            <p class = "upcoming-tasks-box__cards_card__deadline-text">3 Days</p>
+          </div>
+          <!-- Секция New Tasks - левая карточка - фотографии -->
+          <div class = "upcoming-tasks-box__cards_card__photos">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/1f59/2390/d69545d7cf9ff5be12e2248ebf54993a?Expires=1698019200&Signature=fmqTF3S8P3gSfIQknlUWSerSKwVzVFkAQ~~TnhkKR9ipPujD1jj2pg6qx0j1XIG6NkBzyvi3n5UVa2YPdQIzxipduI9WCECd2Z-JZJrHttb0w2omP36DjYtzxzmBnHcKvxAVnzfcwrsl1~yrICuLaOZS-kF5Ts-jX0LlEZnhW18rcEBDtp5PKjy5BQwaPNcgSkyTQ~0dH57PBkL6CeIXBob-A2UFdEY5J86tC9e8USolKsQquapLo05LeQ5f2~UwcWVq3Rylb1~G5A-Ry435IvrV55ki2ywCe0BXlLhafjKLSakBHt3INEp35oF7MGtKJc0I6aNdFbZdZWpO3cV3qg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/177f/160a/7952386bb2224fea86799bdf8f4a8d55?Expires=1698019200&Signature=cRECrmrfC3ziCDlBFtTswc9yOCu5dmIqGHsGa9L5dleY83zhf-jueYD1TYr6sx0al7vXgWMk9Tm0jW2QSfb-qe1KKmRgJQOan3T0OX2eGX0mPkKPrqryC0B41dxFq-0fO~TNVf4QaaE7fD6nYv0Kl42aKFDHW-91EQ-H1E2u6IAQUJHwYSLRblXMpOLchrYVU6E3KrwVX4YzR1FeeNRTQjwFzLbVG~aWqfJnSpMYis~QVHca1kAdi~tC6Ue-DZAdygtwZ0KFiLz-VKPSqaRzyV0DiJajL5GLUUDCiBmc96YTV2sv-PgPWOg8pO~vZBABR9f6z2MJkOK83zhhmfRz1Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/b5fc/ab22/6f5ded88606a0b51f545ab8a1eed1ecf?Expires=1698019200&Signature=XeQHiX22kUFUTa2PJ8uQtKBjrjHrTydPuXUbV5I~uSG4mQK53g~F483ThN5~e3QV~VQJWWFd1yzaqKWEoRjZXztZxKfes6laIT-q1lOHasetdCvDTRWAI8DtAcIBwP4a3qroCDRaCE8HGfGElZkkm~lXihP7~wOraFm8UcJkWWaCFPBLIxHNDJHe~i8SXONBcQ-RpMjjAjgYhredZLHVlvefspT0CzzZpZAIpr8--HLXKygeogXH3haMwWlR8GtRxgA1L79H9PNLGB~yntAGpAcs~mtBTWJVtFH--SFTxmteZWPl4mQyc7HAjK~x7cdmHZo5WXVKtStMSPdHU2s92Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/3439/f222/a2802a5c7f50dfb8284561fe948260ca?Expires=1698019200&Signature=I~Q9kCMuNw6YUtidQYQ8XizR-w9c0zg4dALVpuUwkfzKOgRoNhQ5x1cn7kg84mQpsfVPrkPLJu~L9EFrbuLobWljkxiXpB89PFApyOE6jOOBgdzK9srYhXB6qJsY03zn4DgKZ6Y98ESHph3pStuBNWvm79SJZPvpslF1jSCXixJepTP~7in-GxghnNhbnpPNT4LarTgjIE2yKXooyE5paFHVsNZTHhyH~C9aqoLR--13-hKZgo~KmzliBzVbrXWpBhSclqSTq0mw3iRjQa8bE3gQac0KmKBCIDNguxsASzBG8XmbQARf0vC2Uerg3WS3zkrGpoDXWcoX437CdG-XEQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/b724/5ad6/933997cbe7788b0459810be478939786?Expires=1698019200&Signature=EhV62Tk1u8saA~Bbkk5ivpnub0kPqPLGlpGgfONG0qCy4CFl~owqcc7gWaIUjyWjY9aKIhM2xiLfSyDIoBipB7BdlvQU6w-fRO07nfI10dUMlWRU6Z-vNjTWoCEql3l0TGDgk0ZYIFPCnLJgOcLkLVSs2ye4vnXb0zRmeLq~yxJ-GMnB0D-VlEViP6S4Ft5Y4NJymHy~V68KChLEqG79wUOWaust7yHMMacrMyg3YrFdljqc56kIkRudTAIKThgrgw9vm3bAz634BvHDU8KYvNkbJa8n-BwbcFmof~NGDmjiLD0w3RVI5CcfBIwrxeel0s7mpTC37pIWGigRzHgILQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+          </div>
+        </div>
+
+        <!-- Секция New Tasks - правая карточка -->
+        <div class = "upcoming-tasks-box__cards_right-card">
+          <img class = "upcoming-tasks-box__cards_right-card-picture" src = "https://images.unsplash.com/photo-1635776062360-af423602aff3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80">
+          <div class = "upcoming-tasks-box__cards_card__text-wrap">
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-title">Creating Perfect Website</p>
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-subtitle">Web Development</p>
+          </div>
+          <!-- Секция New Tasks - правая карточка - progress -->
+          <div class = "upcoming-tasks-box__cards_card__progress">
+            <div class = "upcoming-tasks-box__cards_card__progress-header">
+              <p class = "upcoming-tasks-box__cards_card__progress-header_left-text">Progress</p>
+              <p class = "upcoming-tasks-box__cards_card__progress-header_right-text">85%</p>
+            </div>
+            <div class = "upcoming-tasks-box__cards_right-card__progress-bar-light-blue">
+              <div class = "upcoming-tasks-box__cards_right-card__progress-bar-dark-blue">
+                <span class = "upcoming-tasks-box__cards_right-card__progress-bar-light-blue__circle"></span>
+              </div>
+            </div>            
+          </div>
+          <!-- Секция New Tasks - правая карточка - deadline -->
+          <div class = "upcoming-tasks-box__cards_card__deadline">
+            <img class = "upcoming-tasks-box__cards_card__deadline-icon" src="assets/icons/clock.svg" />
+            <p class = "upcoming-tasks-box__cards_card__deadline-text">4 Days</p>
+          </div>
+          <!-- Секция New Tasks - правая карточка - фотографии -->
+          <div class = "upcoming-tasks-box__cards_card__photos">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/b5fc/ab22/6f5ded88606a0b51f545ab8a1eed1ecf?Expires=1698019200&Signature=XeQHiX22kUFUTa2PJ8uQtKBjrjHrTydPuXUbV5I~uSG4mQK53g~F483ThN5~e3QV~VQJWWFd1yzaqKWEoRjZXztZxKfes6laIT-q1lOHasetdCvDTRWAI8DtAcIBwP4a3qroCDRaCE8HGfGElZkkm~lXihP7~wOraFm8UcJkWWaCFPBLIxHNDJHe~i8SXONBcQ-RpMjjAjgYhredZLHVlvefspT0CzzZpZAIpr8--HLXKygeogXH3haMwWlR8GtRxgA1L79H9PNLGB~yntAGpAcs~mtBTWJVtFH--SFTxmteZWPl4mQyc7HAjK~x7cdmHZo5WXVKtStMSPdHU2s92Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/1f59/2390/d69545d7cf9ff5be12e2248ebf54993a?Expires=1698019200&Signature=fmqTF3S8P3gSfIQknlUWSerSKwVzVFkAQ~~TnhkKR9ipPujD1jj2pg6qx0j1XIG6NkBzyvi3n5UVa2YPdQIzxipduI9WCECd2Z-JZJrHttb0w2omP36DjYtzxzmBnHcKvxAVnzfcwrsl1~yrICuLaOZS-kF5Ts-jX0LlEZnhW18rcEBDtp5PKjy5BQwaPNcgSkyTQ~0dH57PBkL6CeIXBob-A2UFdEY5J86tC9e8USolKsQquapLo05LeQ5f2~UwcWVq3Rylb1~G5A-Ry435IvrV55ki2ywCe0BXlLhafjKLSakBHt3INEp35oF7MGtKJc0I6aNdFbZdZWpO3cV3qg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/b724/5ad6/933997cbe7788b0459810be478939786?Expires=1698019200&Signature=EhV62Tk1u8saA~Bbkk5ivpnub0kPqPLGlpGgfONG0qCy4CFl~owqcc7gWaIUjyWjY9aKIhM2xiLfSyDIoBipB7BdlvQU6w-fRO07nfI10dUMlWRU6Z-vNjTWoCEql3l0TGDgk0ZYIFPCnLJgOcLkLVSs2ye4vnXb0zRmeLq~yxJ-GMnB0D-VlEViP6S4Ft5Y4NJymHy~V68KChLEqG79wUOWaust7yHMMacrMyg3YrFdljqc56kIkRudTAIKThgrgw9vm3bAz634BvHDU8KYvNkbJa8n-BwbcFmof~NGDmjiLD0w3RVI5CcfBIwrxeel0s7mpTC37pIWGigRzHgILQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/177f/160a/7952386bb2224fea86799bdf8f4a8d55?Expires=1698019200&Signature=cRECrmrfC3ziCDlBFtTswc9yOCu5dmIqGHsGa9L5dleY83zhf-jueYD1TYr6sx0al7vXgWMk9Tm0jW2QSfb-qe1KKmRgJQOan3T0OX2eGX0mPkKPrqryC0B41dxFq-0fO~TNVf4QaaE7fD6nYv0Kl42aKFDHW-91EQ-H1E2u6IAQUJHwYSLRblXMpOLchrYVU6E3KrwVX4YzR1FeeNRTQjwFzLbVG~aWqfJnSpMYis~QVHca1kAdi~tC6Ue-DZAdygtwZ0KFiLz-VKPSqaRzyV0DiJajL5GLUUDCiBmc96YTV2sv-PgPWOg8pO~vZBABR9f6z2MJkOK83zhhmfRz1Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/3439/f222/a2802a5c7f50dfb8284561fe948260ca?Expires=1698019200&Signature=I~Q9kCMuNw6YUtidQYQ8XizR-w9c0zg4dALVpuUwkfzKOgRoNhQ5x1cn7kg84mQpsfVPrkPLJu~L9EFrbuLobWljkxiXpB89PFApyOE6jOOBgdzK9srYhXB6qJsY03zn4DgKZ6Y98ESHph3pStuBNWvm79SJZPvpslF1jSCXixJepTP~7in-GxghnNhbnpPNT4LarTgjIE2yKXooyE5paFHVsNZTHhyH~C9aqoLR--13-hKZgo~KmzliBzVbrXWpBhSclqSTq0mw3iRjQa8bE3gQac0KmKBCIDNguxsASzBG8XmbQARf0vC2Uerg3WS3zkrGpoDXWcoX437CdG-XEQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+          </div>          
+        </div>
+      
+        <!-- Секция New Tasks - 3 карточка -->
+        <div class = "upcoming-tasks-box__cards_third-card">
+          <img class = "upcoming-tasks-box__cards_left-card-picture" src = "https://images.unsplash.com/photo-1635776064096-4e12cce9ead4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80">
+          <div class = "upcoming-tasks-box__cards_card__text-wrap">
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-title">Creating Color Palletes</p>
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-subtitle">UI UX Design</p>
+          </div>
+          <!-- Секция New Tasks - 3 карточка - progress -->
+          <div class = "upcoming-tasks-box__cards_card__progress">
+            <div class = "upcoming-tasks-box__cards_card__progress-header">
+              <p class = "upcoming-tasks-box__cards_card__progress-header_left-text">Success</p>
+              <p class = "upcoming-tasks-box__cards_card__progress-header_right-text">100%</p>
+            </div>
+            <div class = "upcoming-tasks-box__cards_left-card__progress-bar-light-blue"> 
+              <div class = "third-card-dark-blue upcoming-tasks-box__cards_left-card__progress-bar-dark-blue">
+                <span class = "third-card-circle upcoming-tasks-box__cards_left-card__progress-bar-light-blue__circle"></span>
+              </div>
+            </div>           
+          </div>
+          <!-- Секция New Tasks - 3 карточка - deadline -->
+          <div class = "upcoming-tasks-box__cards_card__deadline">
+            <img class = "upcoming-tasks-box__cards_card__deadline-icon" src="assets/icons/clock.svg" />
+            <p class = "upcoming-tasks-box__cards_card__deadline-text">3 Days</p>
+          </div>
+          <!-- Секция New Tasks - 3 карточка - фотографии -->
+          <div class = "upcoming-tasks-box__cards_card__photos">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/1f59/2390/d69545d7cf9ff5be12e2248ebf54993a?Expires=1698019200&Signature=fmqTF3S8P3gSfIQknlUWSerSKwVzVFkAQ~~TnhkKR9ipPujD1jj2pg6qx0j1XIG6NkBzyvi3n5UVa2YPdQIzxipduI9WCECd2Z-JZJrHttb0w2omP36DjYtzxzmBnHcKvxAVnzfcwrsl1~yrICuLaOZS-kF5Ts-jX0LlEZnhW18rcEBDtp5PKjy5BQwaPNcgSkyTQ~0dH57PBkL6CeIXBob-A2UFdEY5J86tC9e8USolKsQquapLo05LeQ5f2~UwcWVq3Rylb1~G5A-Ry435IvrV55ki2ywCe0BXlLhafjKLSakBHt3INEp35oF7MGtKJc0I6aNdFbZdZWpO3cV3qg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/177f/160a/7952386bb2224fea86799bdf8f4a8d55?Expires=1698019200&Signature=cRECrmrfC3ziCDlBFtTswc9yOCu5dmIqGHsGa9L5dleY83zhf-jueYD1TYr6sx0al7vXgWMk9Tm0jW2QSfb-qe1KKmRgJQOan3T0OX2eGX0mPkKPrqryC0B41dxFq-0fO~TNVf4QaaE7fD6nYv0Kl42aKFDHW-91EQ-H1E2u6IAQUJHwYSLRblXMpOLchrYVU6E3KrwVX4YzR1FeeNRTQjwFzLbVG~aWqfJnSpMYis~QVHca1kAdi~tC6Ue-DZAdygtwZ0KFiLz-VKPSqaRzyV0DiJajL5GLUUDCiBmc96YTV2sv-PgPWOg8pO~vZBABR9f6z2MJkOK83zhhmfRz1Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/b5fc/ab22/6f5ded88606a0b51f545ab8a1eed1ecf?Expires=1698019200&Signature=XeQHiX22kUFUTa2PJ8uQtKBjrjHrTydPuXUbV5I~uSG4mQK53g~F483ThN5~e3QV~VQJWWFd1yzaqKWEoRjZXztZxKfes6laIT-q1lOHasetdCvDTRWAI8DtAcIBwP4a3qroCDRaCE8HGfGElZkkm~lXihP7~wOraFm8UcJkWWaCFPBLIxHNDJHe~i8SXONBcQ-RpMjjAjgYhredZLHVlvefspT0CzzZpZAIpr8--HLXKygeogXH3haMwWlR8GtRxgA1L79H9PNLGB~yntAGpAcs~mtBTWJVtFH--SFTxmteZWPl4mQyc7HAjK~x7cdmHZo5WXVKtStMSPdHU2s92Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/3439/f222/a2802a5c7f50dfb8284561fe948260ca?Expires=1698019200&Signature=I~Q9kCMuNw6YUtidQYQ8XizR-w9c0zg4dALVpuUwkfzKOgRoNhQ5x1cn7kg84mQpsfVPrkPLJu~L9EFrbuLobWljkxiXpB89PFApyOE6jOOBgdzK9srYhXB6qJsY03zn4DgKZ6Y98ESHph3pStuBNWvm79SJZPvpslF1jSCXixJepTP~7in-GxghnNhbnpPNT4LarTgjIE2yKXooyE5paFHVsNZTHhyH~C9aqoLR--13-hKZgo~KmzliBzVbrXWpBhSclqSTq0mw3iRjQa8bE3gQac0KmKBCIDNguxsASzBG8XmbQARf0vC2Uerg3WS3zkrGpoDXWcoX437CdG-XEQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="https://s3-alpha-sig.figma.com/img/b724/5ad6/933997cbe7788b0459810be478939786?Expires=1698019200&Signature=EhV62Tk1u8saA~Bbkk5ivpnub0kPqPLGlpGgfONG0qCy4CFl~owqcc7gWaIUjyWjY9aKIhM2xiLfSyDIoBipB7BdlvQU6w-fRO07nfI10dUMlWRU6Z-vNjTWoCEql3l0TGDgk0ZYIFPCnLJgOcLkLVSs2ye4vnXb0zRmeLq~yxJ-GMnB0D-VlEViP6S4Ft5Y4NJymHy~V68KChLEqG79wUOWaust7yHMMacrMyg3YrFdljqc56kIkRudTAIKThgrgw9vm3bAz634BvHDU8KYvNkbJa8n-BwbcFmof~NGDmjiLD0w3RVI5CcfBIwrxeel0s7mpTC37pIWGigRzHgILQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Секция с сайдбаром и логотипом -->
+    <div class = "sidebar-second-screen sidebar-box">
+      <div class = "sidebar-box-logo">
+        <img class = "sidebar-box-logo__icon" src="assets/icons/book-square.svg" />
+        <div class = "sidebar-box-logo__text">Task<br />MANAGER</div>
+        <nav class = "sidebar-box__navigation">
+          <a class = "sidebar-box__navigation-item" href = "/index">
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/icon.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Overview</div> 
+            </div> 
+          </a>
+          <!-- Навигация - Tasks (selected) -->
+          <a class = "sidebar-box__navigation-item__selected"  href = "/tasks"> 
+            <div class = "sidebar-box__navigation-item__selected_group">
+              <img class = "sidebar-box__navigation-item__selected_group__icon" src="assets/icons/task.svg" />
+              <div class = "sidebar-box__navigation-item__selected_group__text">Tasks</div>               
+            </div>
+          </a>
+          <a class = "sidebar-box__navigation-item" href = "/mentors"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/user_icon.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Mentors</div>               
+            </div>
+          </a>
+          <a class = "sidebar-box__navigation-item" href = "/messages"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/message.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Messages</div>               
+            </div>
+          </a>
+          <a class = "sidebar-box__navigation-item" href = "/images"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/images_icon.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Images</div>               
+            </div>
+          </a>
+          <a class = "sidebar-box__navigation-item" href = "/settings"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/settings_icon.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Settings</div>               
+            </div>
+          </a>
+        </nav>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>  
