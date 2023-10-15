@@ -1,6 +1,10 @@
 # Описание 📝
 
-This is the first homework assignment for the web development course (HSE, October 2023)
+Выполнил: Игорь Петров
+
+Реализованные экраны:
+
+- Overview 
 
 # Информация о макете 🎨
 
